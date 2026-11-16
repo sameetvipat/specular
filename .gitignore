@@ -1,0 +1,43 @@
+.DS_Store
+build/
+*.o
+*.dSYM/
+DerivedData/
+.build/
+.swiftpm/
+
+# test media / outputs (keep clips out of the repo root)
+/*.mp4
+/*.mkv
+/*.mov
+/*.ts
+/*.wav
+/media/
+*.log
+
+# editor / personal
+*.code-workspace
+.claude/settings.local.json
+
+# local / machine-specific
+.mcp.json
+
+# Infuse comparison docs (local only)
+docs/AUDIT.md
+docs/PLAN.md
+docs/brand.md
+
+# Claude workflow / session notes (local only)
+CLAUDE.md
+HANDOFF.md
+.claude/
+docs/STATUS.md
+docs/tasks/
+.vscode/
+
+# built-in TMDB key (secret; build scripts create an empty one if missing)
+app/TMDBKey.swift
+
+# brand logos: trademarks, personal builds only (the folder stays for Package.swift's resources)
+app/Logos/*
+!app/Logos/README.md
